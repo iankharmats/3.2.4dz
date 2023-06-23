@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAA00"
+    tools:context=".MainActivity">
+
+    <com.example.beginnerartist.PaintingView
+        android:id="@+id/painting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="#272727"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabPalette"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#FFAA00"
+            android:clickable="true"
+            android:tintMode="add"
+            app:backgroundTint="#FFAA00"
+            app:fabCustomSize="75dp"
+            app:maxImageSize="60dp"
+            app:srcCompat="@drawable/palette"
+            app:tint="@null" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabBroom"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#FFAA00"
+            android:clickable="true"
+            android:tintMode="add"
+            app:backgroundTint="#FFAA00"
+            app:fabCustomSize="75dp"
+            app:maxImageSize="60dp"
+            app:srcCompat="@drawable/clean"
+            app:tint="@null"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="-75dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSave"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#FFAA00"
+            android:clickable="true"
+            android:tintMode="add"
+            app:backgroundTint="#FFAA00"
+            app:fabCustomSize="75dp"
+            app:maxImageSize="50dp"
+            app:srcCompat="@drawable/diskette"
+            app:tint="@null"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="-75dp"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
